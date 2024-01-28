@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redborder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="ALAM SHOW"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/homeID"
+            android:layout_alignParentEnd="true"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/ic_home_black_24dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_marginTop="40sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+                    <TextView
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:text="OFFICE CLOSE TIME"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                         />
+                    <TextView
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/closetimeID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:text="20:10:00"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+                    <TextView
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:text="CURRENT TIME"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        />
+                    <TextView
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/currenttimeID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="20:10:00"
+                        />
+                </TableRow>
+                </TableLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lvv"
+        android:layout_below="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/clockicon"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lvvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:text="continue od"
+            android:layout_height="wrap_content"
+            style="@style/DefaultButton"
+            android:background="@drawable/three_d"/>
+        <Button
+            android:id="@+id/stop"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:text="OD OUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/DefaultButton"
+            android:background="@drawable/three_d"/>
+    </LinearLayout>
+</RelativeLayout>

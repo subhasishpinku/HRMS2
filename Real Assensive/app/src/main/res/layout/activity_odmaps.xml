@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/lvID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redborder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvIdd"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="MY LOCATION"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/homeID"
+            android:layout_alignParentEnd="true"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/ic_home_black_24dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_marginTop="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:id="@+id/lv1"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/dateId"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="26/10/2018"/>
+
+
+                <TextView
+                    android:id="@+id/timeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="5sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="14:51"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_below="@+id/tvId"
+                android:id="@+id/llv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:orientation="vertical">
+                <TextView
+
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="MY LOCATION"/>
+
+                <TextView
+                    android:id="@+id/locationaddressId"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/border"
+                    android:overScrollMode="always"
+                    android:textSize="15sp"
+                    android:paddingStart="10sp"
+                    android:scrollHorizontally="false"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+<!--        <fragment-->
+<!--            android:layout_below="@+id/lv"-->
+<!--            android:id="@+id/place_autocomplete_fragment"-->
+<!--            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+
+
+    </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_below="@+id/lv"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ODMapsActivity"
+        />
+</RelativeLayout>

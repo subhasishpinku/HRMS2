@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/start_time"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@drawable/ic_camera_alt_black_24dp"-->
+        <!--android:title="CAMERA"-->
+        <!--app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/end_time"
+        android:enabled="true"
+        android:icon="@drawable/ic_attach_file_black_24dp"
+        android:title="ADD IMAGE"
+        app:showAsAction="ifRoom"/>
+    <item
+    android:enabled="true"
+    android:title=""
+    app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btnsubmit"
+        android:enabled="true"
+        android:icon="@drawable/ic_cloud_upload_black_24dp"
+        android:title="SUBMIT"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/close"
+        android:enabled="true"
+        android:icon="@drawable/ic_cloud_upload_black_24dp"
+        android:title="Close"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <RelativeLayout
+        android:id="@+id/lvID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redborder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="TRAVELLING ALLOWANCE"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/homeID"
+            android:layout_alignParentEnd="true"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/ic_home_black_24dp" />
+       </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5sp"
+       android:layout_below="@+id/lvID"
+        android:id="@+id/lvID1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/locID"
+            android:layout_marginLeft="5sp"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/map"
+            />
+
+        <LinearLayout
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_shape">
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_date_range_black_24dp"
+                    android:padding="4dp" />
+                <TextView
+                    android:id="@+id/dateId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:textStyle="bold"
+                    android:text="31/10/2018"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/dayID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:textStyle="bold"
+                    android:text="(Wednesday)"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+            <View
+                android:layout_below="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/locID"
+                android:layout_height="2sp"
+                android:background="@color/red"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5sp"
+                    android:id="@+id/tvf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="SODHPUR"/>
+                <LinearLayout
+                    android:layout_below="@+id/tvf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_marginTop="10sp"
+                        android:layout_width="165dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tvff"
+                        android:layout_toRightOf="@+id/locIDD"
+                        android:layout_weight="2"
+                        android:background="@color/red" />
+
+                    <TextView
+                        android:background="@drawable/circleshape"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="TO" />
+                    <View
+
+                        android:layout_marginTop="10sp"
+                        android:layout_width="165dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tvff"
+                        android:layout_toRightOf="@+id/locIDD"
+                        android:layout_weight="2"
+                        android:background="@color/red" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25sp"
+                    android:layout_below="@+id/tvf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/toloc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:text="DUM DUM" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/purposeID"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="70sp"
+            android:layout_below="@+id/locID"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/purpose"
+            />
+        <LinearLayout
+            android:layout_marginTop="70sp"
+            android:layout_below="@+id/locID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_shape">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:background="@drawable/linerridues"
+                    android:text="PURSOSE"/>
+                <View
+
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+              <TextView
+                  android:id="@+id/purposeeID"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:justificationMode="inter_word"
+                  android:textColor="#000000"
+                  android:text="VISIT ANOTHER OFFICE VISIT ANOTHER OFFICE VISIT ANOTHER OFFICE"
+                  />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/placeID"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="5sp"
+            android:layout_below="@+id/purposeID"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/placeofvist"
+            />
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_below="@+id/purposeID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_shape">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:background="@drawable/linerridues"
+                    android:text="PLACE OF VISIT"/>
+                <View
+
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/placeeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:textColor="#000000"
+                android:text="DUM DUM,SODHPUR,AIRPORT,DUM DUM,SODHPUR,SODHPUR"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/modeID"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="5sp"
+            android:layout_below="@+id/placeID"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/bus"
+            />
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_below="@+id/placeID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_shape">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:background="@drawable/linerridues"
+                    android:text="MODE"/>
+                <View
+
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/modeIDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="AUTO"
+                />
+        </LinearLayout>
+        <ImageView
+
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="5sp"
+            android:layout_below="@+id/modeID"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/rejected"
+            />
+        <LinearLayout
+            android:id="@+id/pandingID"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="30sp"
+            android:layout_below="@+id/modeID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_view_shape"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:background="@drawable/linerridues"
+                    android:text="REJECTED REASON"/>
+                <View
+                    android:layout_width="165dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvff"
+                    android:layout_toRightOf="@+id/locIDD"
+                    android:layout_weight="2"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rejectId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="REJECTED REASON"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/amounIDS"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="30sp"
+            android:layout_below="@+id/pandingID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+
+            android:layout_marginLeft="5sp"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/refund"
+            />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="10sp"
+            android:orientation="horizontal"
+            android:paddingBottom="10sp"
+            android:background="@drawable/card_view_shape">
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/rupeee"/>
+            <TextView
+                android:id="@+id/amountID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="1500"/>
+        </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="5sp"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:src="@drawable/stamp" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:paddingBottom="10sp"
+                android:background="@drawable/card_view_shape"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/rupeee" />
+
+                <TextView
+                    android:id="@+id/amountIDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1500"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="5sp"
+            android:layout_below="@+id/amounIDS"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/attachh"
+            />
+        <LinearLayout
+            android:layout_marginTop="30sp"
+            android:layout_below="@+id/amounIDS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_shape">
+            <com.github.chrisbanes.photoview.PhotoView
+                android:visibility="gone"
+                android:id="@+id/imgviewID"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:src="@drawable/profile_user"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_below="@+id/lvvv9"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

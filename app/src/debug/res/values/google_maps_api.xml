@@ -1,0 +1,52 @@
+<!--<resources>-->
+<!--    &lt;!&ndash;-->
+<!--    TODO: Before you run your application, you need a Google Maps API key.-->
+
+<!--    To get one, follow this link, follow the directions and press "Create" at the end:-->
+
+<!--    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F9:54:B5:5E:2E:9D:0C:A9:36:BD:27:B3:AD:A6:C9:E1:E9:18:9D:44%3Bin.co.icdswb.hrms-->
+
+<!--    You can also add your credentials to an existing key, using these values:-->
+
+<!--    Package name:-->
+<!--    F9:54:B5:5E:2E:9D:0C:A9:36:BD:27:B3:AD:A6:C9:E1:E9:18:9D:44-->
+
+<!--    SHA-1 certificate fingerprint:-->
+<!--    F9:54:B5:5E:2E:9D:0C:A9:36:BD:27:B3:AD:A6:C9:E1:E9:18:9D:44-->
+
+<!--    Alternatively, follow the directions here:-->
+<!--    https://developers.google.com/maps/documentation/android/start#get-key-->
+
+<!--    Once you have your key (it starts with "AIza"), replace the "google_maps_key"-->
+<!--    string in this file.-->
+<!--    &ndash;&gt;-->
+<!--    &lt;!&ndash;    for windows my email&ndash;&gt;-->
+<!--    &lt;!&ndash;    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDOWCj-mNSCRU0rpEsmwUCLQllGqtmOAiA</string>&ndash;&gt;-->
+<!--    &lt;!&ndash;    for linex calltosolve email&ndash;&gt;-->
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA_Y4jse1Y_KVBYyJxRKE-zdiypTAA6n-Q</string>-->
+<!--</resources>-->
+
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=C6:96:C7:CC:E6:11:CD:21:23:E3:2E:60:52:2F:8A:23:79:03:7E:E3%3Bin.co.icdswb.hrms
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    C6:96:C7:CC:E6:11:CD:21:23:E3:2E:60:52:2F:8A:23:79:03:7E:E3
+
+    SHA-1 certificate fingerprint:
+    C6:96:C7:CC:E6:11:CD:21:23:E3:2E:60:52:2F:8A:23:79:03:7E:E3
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCdrkAyVjBD_g7NvgA_K9WZASPOJxGDui4</string>
+</resources>
